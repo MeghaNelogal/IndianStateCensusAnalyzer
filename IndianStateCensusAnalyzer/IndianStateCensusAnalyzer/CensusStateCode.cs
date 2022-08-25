@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace IndianStateCensusAnalyzer
 {
-    public class StateCensusData
+    public class CensusStateCode
     {
-        string state;
-        int population;
-        int area;
-        int density;
-        public StateCensusData(string state, string population, string area, string density)
+        public string SerialNumber;
+        public string StateName;
+        public string Tin;
+        public string StateCode;
+
+        public CensusStateCode(string serialnumber, string statename, string tin, string statecode)
         {
-            this.state = state;
-            this.population = Convert.ToInt32(population);
-            this.area = Convert.ToInt32(area);
-            this.density = Convert.ToInt32(density);
+            this.SerialNumber = serialnumber;
+            this.StateName = statename;
+            this.Tin = tin;
+            this.StateCode = statecode;
         }
     }
 }
